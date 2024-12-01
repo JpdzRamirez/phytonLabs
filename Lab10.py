@@ -1,5 +1,5 @@
 # Solicitar la cantidad de tareas
-num_tareas = int(input("Ingrese la cantidad de tareas en el curso: "))
+num_tareas = int(input("Ingrese el numero de entregas en el curso: "))
 
 # Inicializar las listas para almacenar los nombres, ponderaciones y calificaciones
 nombres_tareas = []
@@ -11,7 +11,7 @@ for i in range(num_tareas):
     # Solicitar el nombre de la tarea
     nombre = input(f"Ingrese el nombre de la tarea {i + 1}: ")
     # Solicitar la ponderación de la tarea
-    ponderacion = float(input(f"Ingrese la ponderación de la tarea {i + 1} (en porcentaje): "))
+    ponderacion = float(input(f"Ingrese el valor total de la tarea {i + 1} (en porcentaje %): "))
     # Solicitar la calificación obtenida en la tarea
     calificacion = float(input(f"Ingrese la calificación obtenida en la tarea {i + 1}: "))
     
@@ -35,3 +35,13 @@ for i in range(num_tareas):
 
 # Mostrar la calificación final
 print(f"Calificación final del curso: {calificacion_final:.2f}")
+if calificacion_final >= 3.0:
+    print("¡Felicidades! Has aprobado el curso. 🎉")
+else:
+    print("Lo siento, no has aprobado el curso. 😢")
+    print("Recuerda que la calificación mínima para aprobar es 3.0.")
+    print("¡Ánimo! Puedes intentarlo de nuevo. 💪")
+
+print(f"IU Digital de Antioquia - 2024-2")
+print(f"Powered by Python 🐍")
+print(f"By: @JPDZSoftware")
