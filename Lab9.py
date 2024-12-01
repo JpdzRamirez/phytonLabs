@@ -29,6 +29,7 @@ for fila in datos:
         meses_prom[mes] += precip
         contador_meses[mes] += 1
 
+        #Aprovechamos el ciclo para determinar el mes con mayor y menor precipitación
         # Menor precipitación
         if precip < menor_precip:
             menor_precip = precip
